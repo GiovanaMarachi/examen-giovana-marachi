@@ -21,6 +21,7 @@ const Componente01 = () => {
         value={inputValue}
         onChangeText={setInputValue}
       />
+      
       <FlatList
         data={items}
         keyExtractor={(item) => item.key}
@@ -48,7 +49,7 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     marginBottom: 20,
     color: 'black',
-    alignSelf:'center'
+    alignSelf:'center' 
   },
   input: {
     borderWidth: 1,
