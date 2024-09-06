@@ -20,17 +20,17 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     padding: 20,
-    backgroundColor: '#f5f5f5', // Fondo gris claro para un aspecto moderno
+    backgroundColor: '#f5f5f5', 
   },
   text: {
     fontSize: 18,
-    color: '#333', // Color oscuro para el texto
+    color: '#333', 
     textAlign: 'center',
   },
   value: {
     fontSize: 18,
     fontWeight: 'bold',
-    color: '#007BFF', // Color azul para resaltar los valores
+    color: '#007BFF', 
   },
 });
 

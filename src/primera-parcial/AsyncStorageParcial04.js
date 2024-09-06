@@ -8,7 +8,7 @@ const AsyncStorageParcial04 = () => {
   const [carrera, setCarrera] = useState('');
   const [facultad, setFacultad] = useState('');
   const [datos, setDatos] = useState([]);
-  const [editingCodigo, setEditingCodigo] = useState(null); // Código del dato en edición
+  const [editingCodigo, setEditingCodigo] = useState(null); 
 
   useEffect(() => {
     loadDatos();
@@ -23,15 +23,15 @@ const AsyncStorageParcial04 = () => {
         );
         await AsyncStorage.setItem('datos', JSON.stringify(updatedDatos));
         setDatos(updatedDatos);
-        setEditingCodigo(null); // Salir del modo edición
+        setEditingCodigo(null); 
       } else {
-        // Modo agregar nuevo dato
+       
         const newDato = { codigo, carrera, facultad };
         const updatedDatos = [...datos, newDato];
         await AsyncStorage.setItem('datos', JSON.stringify(updatedDatos));
         setDatos(updatedDatos);
       }
-      // Limpiar campos después de guardar o actualizar
+      
       setCodigo('');
       setCarrera('');
       setFacultad('');
@@ -55,7 +55,7 @@ const AsyncStorageParcial04 = () => {
     setCodigo(dato.codigo);
     setCarrera(dato.carrera);
     setFacultad(dato.facultad);
-    setEditingCodigo(dato.codigo); // Guardar código del dato que se está editando
+    setEditingCodigo(dato.codigo); 
   };
 
   return (
